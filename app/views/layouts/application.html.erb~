@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+<head>
+<title>Pragprog Books Online Store</title>
+<%= stylesheet_link_tag "depot" , :media => "all" %>
+</head>
+<body id="store">
+<div id="banner">
+<%= image_tag("/images/logo1.png" ) %>
+<%= @page_title || "Padayi.com" %>
+</div>
+<div id="columns">
+
+<div id="cart">
+<% if @cart %>
+<%= hidden_div_if(@cart.line_items.empty?, :id => "cart" ) do %>
+ <%= render @cart %>
+<% end %>
+<% end %>
+</div>
+
+<div id="sidebarWrapper" class="grid_4">
+  <div id="sidebar" style="height: 2160px; ">
+     <div class="widget search">
+	<h4 class="search">Search</h4>
+	<form accept-charset="UTF-8" action="/articles" method="get">
+        <div style="margin:0;padding:0;display:inline">
+        <input name="utf8" type="hidden" value="✓"></div>
+	<input id="search" name="search" type="text">
+	<input type="submit" value="Search">
+        </form>
+</div>	
+
+
+
+<div class="widget topics">
+	<h4 class="topics">Menu</h4>
+	<p><em>Were you looking for something?</em></p>	
+	<div class="topicsLoader"></div>
+	<ul>
+		<li><%= link_to 'Home',homes_path %><br /></li>
+		<li><%= link_to 'About us', new_home_path %><br /></li>
+		<li><%= link_to 'E-book',store_path %><br />
+		<a>Magazines</a><br /></li>
+		<a>Tutorials</a><br /></li>
+		<li><% if session[:user_id] %><br /></li>
+		<li><%= link_to 'Orders',orders_path %><br /></li>
+		<li><%= link_to 'Products', products_path %><br /></li>
+		<li><%= link_to 'Users',users_path %><br /></li>
+		<br />
+			<li><%= button_to 'Logout', logout_path, :method => :delete %></li>
+		<li><% end %></li>
+	</ul>
+</div>
+
+<div class="widget pages">
+	<h4 class="pages">Pages</h4>
+	<p><em>Just like a book!</em></p>
+	<ul>
+		<li><a href="/portfolio">Portfolio</a></li>
+		<li><a href="/contact">Contact</a></li>
+	</ul>	
+</div>	
+				</div>
+			</div>
+<div id="main">
+<%= yield :layout %>
+</div>
+</div>
+</body>
+</html>
+

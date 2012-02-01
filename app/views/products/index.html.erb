@@ -1,0 +1,40 @@
+<div id="product-list">
+<h1>Listing products</h1>
+<% form_tag products_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :title => nil %>
+  </p>
+  <% end %>
+<table>
+<% for product in @products  %>  
+<div class="entry"
+<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+<td>
+	<%= image_tag product.image_url, :class => 'list-image' %>
+</td>
+<td class="list-description">
+	<dl>
+	<dt><%=h product.title %></dt>
+	<dd><%=h truncate(product.description.gsub(/<.*?>/,''),
+	:length => 80) %></dd>
+	</dl>
+</td>
+<td class="list-actions">
+	<%= link_to 'Show', product %><br/>
+	<%= link_to 'Edit', edit_product_path(product) %><br/>
+	<%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %>
+</td>
+</tr>
+
+<% end %>
+</table>
+</div>
+</div>
+<br />
+<div class="pagination">
+<center><%= will_paginate @products1 %></center>
+</div>
+<%= link_to 'New product', new_product_path %>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+<head>
+<title>Pragprog Books Online Store</title>
+<%= stylesheet_link_tag "depot" , :media => "all" %>
+</head>
+<body id="store">
+<div id="banner">
+<%= image_tag("/images/logo1.png" ) %>
+<%= @page_title || "Padayi.com" %>
+</div>
+<div id="columns">
+<div id="side">
+<%= link_to 'Home', :controller =>'homes', :action => 'index' %><br/>
+<%= link_to 'About us', :controller => 'homes', :action =>'new' %><br />
+<%= link_to 'E-book', :controller =>'store', :action => 'index' %><br/>
+<%= link_to 'Magazines', :controller =>'products', :action => 'index' %><br/>
+<a>Tutorials</a><br />
+<%= button_to 'Logout', logout_path, :method => :delete %>
+</div>
+<div id="main">
+<%= yield :layout %>
+</div>
+</div>
+</body>
+</html>
+

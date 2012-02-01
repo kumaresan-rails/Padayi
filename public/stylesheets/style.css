@@ -1,0 +1,204 @@
+/* Basic Layout */
+html {}
+body {background: #c8d09d url(/images/background.jpg) repeat;}
+
+#header {height: 110px; width: 960px; position: relative;}
+#header h1 {position: absolute; left: 366px; top: 20px; width: 226px; height: 75px; font-size: 30px; font-weight: bold; padding: 0; margin: 0; text-indent: -999em;}
+#header h1 a {display: block; width: 226px; height: 75px; background: url(../images/emerson-lackey.png) 0px 0px; text-decoration: none;}
+#header h1 a:hover {background-position: 0px -75px;}
+#wrapper {width: 960px; margin: 0 auto 50px auto; padding: 20px 10px 20px 10px; background: #fff; border: 1px solid #9da678; min-height: 600px;}
+#sidebar {background: url(/images/sidebar-repeat.jpg) 0px 0px repeat; border: 1px solid #ae9d93; }
+a.logout {font-size: 12px; position: absolute; bottom: 10px; right: 0px;}
+
+/* Links */
+a {color: #2075b5;}
+a:visited {color: #2075b5;}
+a:hover {color: #4eb1fb;}
+
+/* General & Important Styles */
+.clear {clear: both;}
+.hr {clear: both; width: 100%; height: 7px; margin: 8px 0; background: url(../images/articleHr.png) 0px 0px no-repeat;}
+.center {text-align: center; margin: 0 auto;}
+.default {display: inline; font-size: 12px;}
+
+/* Typography Matters */
+strong {font-weight: bold;}
+em {font-style: italic;}
+body {font-family: Tahoma, Geneva, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold; }
+h1 {font-size: 26px; margin: 15px 0 20px 0;}
+h2 {font-size: 24px; font-family: Baskerville,'Palatino Linotype', 'Book Antiqua', Palatino, serif; margin: 5px 0 15px 0;}
+h2.articleIndexTitle {margin-bottom: 7px;}
+h2.articleIndexTitle a {text-decoration: none;}
+h3 {font-size: 20px; margin: 8px 0 10px 0;}
+h4 {font-size: 18px; margin: 8px 0 10px 0;}
+h5 {font-size: 14px; margin: 8px 0 8px 0;}
+h6 {font-size: 12px; margin: 8px 0 5px 0;}
+p {font-size: 12px; line-height: 150%; margin-bottom: 15px;}
+p.published {color: #c7c7c7; padding-left: 21px; margin: 0 0 5px 3px; background: url(../images/published.png) 0px 4px no-repeat; font-style: italic;}
+p.published strong {color: #b90e0e;}
+ul {font-size: 12px; line-height: 140%; list-style: disc; margin: 5px 0 10px 20px;}
+ol {font-size: 12px; line-height: 140%; list-style: decimal; margin: 5px 0 10px 20px;}
+ul li {padding-bottom: 5px;}
+ol li {padding-bottom: 5px;}
+
+/* Article Style */
+div.article {padding: 25px 0 10px 35px; background: url(../images/article-corner.png) 0px 0px no-repeat;}
+div.excerpt {padding-bottom: 5px; background: url(../images/articleHr.png) left bottom no-repeat;}
+ul.articleMenu {margin: 10px 0 15px 0; height: 27px;}
+.single ul.articleMenu {margin: 0;}
+.numberOfComments {color: #ccc; margin-bottom: 0px;}
+ul.articleMenu li {display: block; width: 96px; height: 27px; text-align: center; float: left; margin-right: 8px; display: inline;}
+ul.articleMenu li a {display: block; width: 96px; height: 27px; color: #fff; text-decoration: none; line-height: 25px; background: url(../images/button.png) 0px 0px no-repeat;}
+ul.articleMenu li a:hover {background-position: 0px -27px;}
+ul.buttonMenu {margin-left: 0;}
+ul.buttonMenu li {display: block; width: 96px; height: 27px; text-align: center; float: left; margin-right: 8px; display: inline;}
+ul.buttonMenu li a {display: block; width: 96px; height: 27px; color: #fff; text-decoration: none; line-height: 25px; background: url(../images/button.png) 0px 0px no-repeat;}
+ul.buttonMenu li a:hover {background-position: 0px -27px;}
+div.alert {border: 1px dashed #c8c979; background: #ffffee; padding: 15px 15px 0 15px; margin-bottom: 15px;}
+div.screencastLink {border: 1px dashed #cccccc; background: #efefef; padding: 5px 15px; font-weight: bold;}
+div.screencastLink a {display: block; background: url(../images/box_download_48.png) 0px 4px no-repeat; padding: 10px 0 10px 30px; font-size: 13px;}
+
+/* Basic Menu */
+.menu {list-style: none;}
+.menu li {display: inline; margin-right: 10px;}
+
+/* Attachments and Images */
+.img-centre {padding: 8px; background: #efefef; border: 1px solid #ccc; text-align: center; margin-bottom: 12px;}
+
+/* Category Page */
+.category h1 {text-align: center;}
+
+/* Pagination */
+.pagination {background: #dde8f2; border: 1px dashed #9eb4c7; margin: 20px 0 20px 0; padding: 13px 12px; font-size: 12px;}
+.pagination .current {font-weight: bold;}
+.pagination span {margin-right: 4px;}
+.pagination a {margin-right: 4px;}
+.pagination .disabled {color: #7c91a3;}
+
+/* Sidebar & Widgets */
+.widget {width: 250px; margin: 10px auto; padding: 15px 15px 8px 15px; border: 1px solid #d2cabd; background: url(/images/widget-background.jpg) 0px 0px no-repeat; position: relative;}
+h4.search {width: 91px; height: 27px; background: url(/images/search-header.jpg) 0px 0px no-repeat; margin: 0 auto; text-align: center; text-indent: -999em;}
+div.search p {color: #aeac9e; text-align: center;}
+#search {border: 3px solid #cac8b8; width: 140px; margin: 15px 0 15px 20px;}
+h4.topics {width: 91px; height: 27px; background: url(/images/topics-header.jpg) 0px 0px no-repeat; margin: 0 auto; text-align: center; text-indent: -999em;}
+div.topics p {color: #aeac9e; text-align: center;}
+h4.pages {width: 91px; height: 27px; background: url(/images/pages-header.jpg) 0px 0px no-repeat; margin: 0 auto; text-align: center; text-indent: -999em;}
+div.pages p {color: #aeac9e; text-align: center;}
+h4.admin {width: 91px; height: 27px; background: url(/images/admin-header.jpg) 0px 0px no-repeat; margin: 0 auto; text-align: center; text-indent: -999em;}
+div.admin p {color: #aeac9e; text-align: center;}
+div.widget ul {list-style: none; margin: 0; padding: 15px 0 10px 0;}
+div.widget ul li {text-align: center; position: relative;}
+div.widget ul li a {font-weight: bold; display: block; border: 1px dotted #d2cabd; padding: 5px 0; margin: 0 15px 5px 15px; text-decoration: none;}
+div.widget ul li a:hover {border: 1px dotted #a9a29b;}
+.topicsLoader {display: block; display: none; position: absolute; top: 24px; left: 24px; width: 16px; height: 16px; background: url(../images/loading-spinner-small.gif) 0px 0px no-repeat;}
+div.topics a.delete {position: absolute; width: 16px; height: 16px; right: 20px; top: 7px; background: url(../images/delete-icon.png) 0px 0px no-repeat; text-indent: -999em; border: 0; padding: 0; margin: 0;}
+div.topics a.delete:hover {border: 0;}
+
+/* Basic Form Style */
+.formRow {margin-bottom: 10px;}
+label {font-size: 12px; font-weight: bold; display: block; margin-bottom: 4px;}
+label.inline {display: inline; margin: 0 0 0 5px;}
+label em {font-weight: normal; color: #999; font-size: 10px;}
+input[type=text] {padding: 4px;}
+input[type=password] {padding: 4px;}
+textarea {width: 85%; padding: 4px; line-height: 130%; font-family: Tahoma, Geneva, sans-serif; font-size: 12px;}
+.fileField {padding: 5px; background: #dadec4; border: 1px solid #b7bc9b; width: 55%; margin-bottom: 10px;}
+#article_excerpt {height: 120px; line-height: 130%;}
+#article_meta_description {height: 40px;}
+.adminPhoto label {display: inline;}
+.adminPhoto {display: block; float: left; margin-right: 15px; display: inline; padding: 5px; background: #dadec4; border: 1px solid #b7bc9b; position: relative;}
+.adminPhoto a.deletePhoto {display: block; width: 16px; height: 16px; background: url(../images/delete-icon.png) 0px 0px no-repeat; text-indent: -999em; position: absolute; top: 8px; right: 8px;}
+#comment_comment { font-family: Tahoma, Geneva, sans-serif; line-height: 150%; height: 100px; font-size: 12px;}
+.small {height: 120px;}
+
+/* Comments */
+.commentList {list-style: none; margin: 0; padding: 0; border-top: 1px dashed #cccccc;}
+.commentList li {margin: 0 0 5px 0; padding: 10px 0 0 0; border-bottom: 1px dashed #cccccc; min-height: 70px; position: relative;}
+.gravatarImage {width: 50px; height: 50px; padding: 5px; background: #efefef;}
+.commentLeft {width: 12%; float: left;}
+.commentRight {width: 88%; float: left;}
+.commentName {font-weight: bold; padding: 0; margin: 0;}
+.commentCreated_at {font-size: 11px; font-style: italic; color: #cccccc; margin: 0 0 8px 0; padding: 0;}
+.commentList li input {position: absolute; top: 0; right: 0;}
+.manageComments {margin: 0; padding: 0 0 15px 0;}
+.manageComments li {margin: 0 8px 0 0; padding: 0; border: 0; display: inline; min-height: auto;}
+
+
+/* Projects */
+.projectName {margin-bottom: 5px;}
+a.newInvoice {position: relative; top: 4px;}
+.projectDetails p {color: #ccc; line-height: 130%;}
+.projectList {list-style: none; margin: 0; padding: 0; border-top: 1px dashed #cccccc;}
+.projectList li {margin: 0 0 5px 0; padding: 10px 0 0 0; border-bottom: 1px dashed #cccccc; min-height: 70px; position: relative;}
+
+
+
+.edit_invoice input[type=text], .new_invoice input[type=text] {padding: 2px;}
+.edit_invoice .rate input, .new_invoice .rate input {width: 40px; text-align: center;}
+.edit_invoice .hours input, .new_invoice .hours input {width: 40px; text-align: center;}
+.edit_invoice .cost, .new_invoice .cost {text-align: right;}
+.edit_invoice .subtotal td, .new_invoice .subtotal td {text-align: right; font-weight: bold;}
+.edit_invoice .tax td, .new_invoice .tax td {text-align: right; font-weight: bold;}
+.edit_invoice .total td, .new_invoice .total td {text-align: right; font-weight: bold;}
+.edit_invoice .value, .new_invoice .value {padding-right: 3%;}
+
+.edit_invoice td, .new_invoice td {height: 35px; vertical-align: middle; padding: 0px;}
+
+.removeTask {background: url(../images/cancel_48.png) 0px 0px no-repeat; display: block; width: 20px; height: 20px; text-indent: -999em;}
+.addTask {float: left; margin-left: 12px;}
+td.destroy {width: 5%; padding-left: 1%;}
+td.description {width: 39%;}
+td.hours {width: 12%;}
+td.rate {width: 21%;}
+th.cost {text-align: right; padding-right: 4%;}
+td.cost {width: 19%; padding-right: 3%;}
+#invoice_tax_rate {width: 26px; padding: 1px; display: inline; text-align: center;}
+
+/* Portfolio Page */
+.portfolio .hr {background-position: center center;}
+.portfolio .buttonMenu {height: 27px;}
+.portfolio .buttonMenu li {display: block; float: none; margin: 0 auto;}
+.portfolio .grid_12 {text-align: center;}
+.portfolio .grid_4 {height: 290px;}
+.portfolio .grid_4 h5 {padding-left: 10px;}
+.portfolio .grid_4 p {padding-left: 10px;}
+.portfolio .grid_4 ul {display: none;}
+.portfolioThumb {padding: 9px; border: 1px solid #d7d7d7; display: block; width: 280px; height: 140px;}
+
+/* Contact Page */
+h1.contact {width: 600px; height: 130px; padding: 8px; text-indent: -999em; background: #efefef url(../images/contact.jpg) 8px 8px no-repeat; border: 1px solid #ccc;}
+#message_content {height: 180px;}
+.url_check {display: none;}
+
+/* Inline Menu */
+.inlineMenu {list-style: none; margin: 0 0 15px 0; padding: 0;}
+.inlineMenu li {display: inline; margin: 0 8px 0 0; border: 0; padding: 0;}
+.commentStatus {font-size: 11px; text-align: center; width: 60px;}
+.approved {color: #51d05a;}
+.unapproved, .spam {color: #a23939;}
+
+/* General Link Menus */
+.menu {height: 35px; background: #dde8f2; border: 1px dashed #9eb4c7; margin: 0 0 20px 0; padding: 0 15px; position: relative;}
+.menu li {display: block; float: left; height: 35px; margin: 0 10px 0 0; display: inline; padding: 0;}
+.menu li a {display: block; height: 35px; padding: 0 8px; line-height: 35px;}
+
+.menu .selectActions {position: absolute; right: 0; top: 0px;}
+.menu .selectActions select {margin-top: 8px;}
+
+/* jQuery UI Popup */
+.ui-dialog-content {text-align: center; font-weight: bold; padding-top: 14px; padding-bottom: 0;}
+.ui-dialog-content p {postion: relative; top: 4px;}
+
+/* Tables */
+table {border-top: 1px solid #d8d8d8; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; width: 100%; margin-bottom: 12px;}
+th {padding: 5px 3px; background: #eaeaea; color: #999; text-align: left; font-size: 13px; border-bottom: 1px solid #d8d8d8;}
+td {background: #f8f8f8 url(../images/row_bg.png) repeat-x; padding: 5px 3px; border-bottom: 1px solid #e1e1e1; font-size: 12px; min-height: 24px;}
+
+/* Errors, Notices, and Form Explanations */
+.formErrors {padding: 15px 15px 5px 15px; margin-bottom: 20px; background: #ffeded; border: 1px solid #d0a2a2;}
+.formErrors li {font-weight: bold;}
+.fieldWithErrors input {background: #fff url(../images/input-field-error.png) 96% 50% no-repeat;}
+.fieldWithErrors textarea {background: url(../images/input-field-error.png) 99% 4px no-repeat;}
+p.notice {background: #cbf7ca url(../images/notice.png) 10px 50% no-repeat; border: 1px solid #71b170; color: #274c26; padding: 11px 0 11px 50px; margin-bottom: 20px; font-weight: bold;}
+p.error {background: #f4d3d3 url(../images/error.png) 10px 50% no-repeat; border: 1px solid #834949; color: #3b1e1e; padding: 11px 0 11px 50px; margin-bottom: 20px; font-weight: bold;

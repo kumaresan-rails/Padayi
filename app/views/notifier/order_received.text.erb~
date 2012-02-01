@@ -1,0 +1,18 @@
+Dear <%= @order.name %>
+==================================
+Your Details:
+Your username is: <%= @cart.name %>
+Your email is: <%= @cart.email %>
+Your address is: <%= @cart.address %>
+
+
+Thank you for your recent order from The Padayi.com.
+
+You ordered the following items:
+
+<%= render @order.line_items %>
+
+For edit Your profile: <%= edit_cart_url(@cart, :host =>"localhost:3000") %>
+
+We'll send you a separate e-mail when your order ships.
+

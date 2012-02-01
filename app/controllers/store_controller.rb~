@@ -1,0 +1,7 @@
+class StoreController < ApplicationController
+  def index
+	@products = Product.find_products_for_sale.paginate(:per_page => 3, :page => params[:page])
+	@cart= current_cart
+  end
+
+end
